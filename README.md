@@ -1,2 +1,2 @@
 # seatbookingsystem
-Pladsbook til PFP-arten.
+Pladsbooking til PFP-arten.
