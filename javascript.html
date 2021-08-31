@@ -2,12 +2,6 @@
 <html>
 <body>
 
-<h2>What Can JavaScript Do?</h2>
-
-<p id="demo">JavaScript can change HTML content.</p>
-
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-  
 <p> Dette er et linkt til at lære JavaScript HTML: <a href="https://www.w3schools.com/js/js_intro.asp">Link</a>  </p>
   
 </body>
@@ -51,6 +45,23 @@
 </div>
 
 <p style="clear:both"><br>Remember to clear floats after, or else will this p element also float next to the buttons.</p>
+
+<script>
+    var count = 1;
+    function setColor(btn, color) {
+        var property = document.getElementById(btn);
+        if (count == 0) {
+            property.style.backgroundColor = "#FFFFFF"
+            count = 1;        
+        }
+        else {
+            property.style.backgroundColor = "#7FFF00"
+            count = 0;
+        }
+    }
+</script>
+
+<input type="button" id="button" value = "button" style= "color:white" onclick="setColor('button', '#101010')";/>
 
 </body>
 </html>
